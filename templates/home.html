@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="jumbotron text-center">
+    <h1>欢迎使用读书笔记</h1>
+    <p class="lead">好记性不如烂笔头！</p>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">注册</a>
+      <a href="/login" class="btn btn-success btn-lg">登录</a>
+    {% endif %}
+  </div>
+{% endblock %}

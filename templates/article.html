@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="content">
+  <h1 class="title-center">{{article.title}}</h1>
+  <p class="post-author fr">作者：{{article.author}} &nbsp {{article.create_date}} </p>
+  <div class="clear">
+    {{article.content | safe}}
+  </div>
+</div>
+{% endblock %}
+
